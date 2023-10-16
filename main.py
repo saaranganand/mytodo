@@ -4,6 +4,11 @@ def get_todos(filepath):
     return todos_l
 
 
+def write_todos(filepath, todos_arg):
+    with open(filepath, 'w') as file_l:
+        file_l.writelines(todos_arg)
+
+
 while True:
     user_action = input("Type add, show, edit, complete, clear or exit: ")
     user_action = user_action.strip() # remove trailing and leading spaces
@@ -16,8 +21,7 @@ while True:
 
         todos.append(todo + "\n")
 
-        with open('files/todos.txt', 'w') as file:
-            file.writelines(todos)
+        write_todos("files/todos.txt", todos)
 
     elif user_action.startswith('show'):
 
@@ -40,8 +44,8 @@ while True:
             new_todo = input("Enter new todo for " + str(number+1) + ": ")
             todos[number] = new_todo + "\n"
 
-            with open('files/todos.txt', 'w') as file:
-                file.writelines(todos)
+            write_todos("files/todos.txt", todos)
+
         except ValueError:
             print("Invalid command!")
             continue
@@ -57,20 +61,19 @@ while True:
             todo_to_remove = todos[index].strip('\n')
             todos.pop(index)
 
-            with open('files/todos.txt', 'w') as file:
-                file.writelines(todos)
+            write_todos("files/todos.txt", todos)
 
             message = f"\"{todo_to_remove}\" completed!"
             print(message)
+
         except IndexError:
             print("No todo with that number!")
             continue
     
     elif user_action.startswith('clear'):
 
-        with open('files/todos.txt', 'w') as file:
-            file.writelines([])
-        
+        write_todos("files/todos.txt", [])
+
         message = "All todos cleared!"
         print(message)
 
