@@ -1,5 +1,0 @@
-clean
-shower
-play
-fix
-throw
