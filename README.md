@@ -1,5 +1,5 @@
-# MyTodoApp
-A simple to-do app built using Python.
+# MyTodoApp <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft_To-Do_icon.png" width="35" height="30">
+A simple to-do app built using Python. 
 
 ---
 
