@@ -18,6 +18,7 @@ list_box = sg.Listbox(values=functions.get_todos(), key='todos',
                       enable_events=True, size=[45, 10])
 edit_button = sg.Button("Edit")
 complete_button = sg.Button("Complete")
+clear_button = sg.Button("Clear")
 exit_button = sg.Button("Exit")
 
 tasks = len(functions.get_todos())
@@ -28,6 +29,7 @@ window = sg.Window('My To-Do App',
                            [label], 
                            [input_box, add_button], 
                            [list_box, edit_button, complete_button],
+                           [clear_button],
                            [exit_button]],
                    font=('Helvetica', 20))
 
@@ -66,6 +68,12 @@ while True:
                 window['todo'].update(value="")
             except IndexError:
                 sg.popup("Please first select a todo", font=("Helvetica", 20))
+        case "Clear":
+            todos = functions.get_todos()
+            todos.clear()
+            functions.write_todos(todos)
+            window['todos'].update(values=todos)
+            window['todo'].update(value="")
         case "Exit":
             break
         case "todos":
