@@ -12,4 +12,10 @@ Features:
 
 ---
 
-Current build functional on macOS only.
+Current build functional on <ins>***macOS***</ins> only.
+
+Please note that this app is not notarized with Apple, so you will get a malware warning. You can prevent this by right-clicking the application and clicking 'Open'.
+
+There's no malware in my app, trust.
+
+(we do a little trolling :eyes:)
