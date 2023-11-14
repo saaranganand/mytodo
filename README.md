@@ -1,9 +1,7 @@
 # MyTodo <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Microsoft_To-Do_icon.png" width="35" height="30">
 A simple to-do app built using Python. 
 
----
-
-Install by downloading zip from Github.
+Current build functional on <ins>***macOS***</ins> only.
 
 ---
 
@@ -16,7 +14,7 @@ Features:
 
 ---
 
-Current build functional on <ins>***macOS***</ins> only.
+Install by downloading zip from Github.
 
 Please note that this app is not notarized with Apple, so you will get a malware warning. You can prevent this by right-clicking the application and clicking 'Open'.
 
