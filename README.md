@@ -3,6 +3,10 @@ A simple to-do app built using Python.
 
 ---
 
+Install by downloading zip from Github.
+
+---
+
 Features:
 - Add and remove to-dos.
 - Clear the list of to-dos.
