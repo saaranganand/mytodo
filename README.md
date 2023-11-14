@@ -18,6 +18,4 @@ Install by downloading zip from Github.
 
 Please note that this app is not notarized with Apple, so you will get a malware warning. You can prevent this by right-clicking the application and clicking 'Open'.
 
-There's no malware in my app, trust.
-
-(we do a little trolling :eyes:)
+(There's no malware in my app, trust. :eyes:)
